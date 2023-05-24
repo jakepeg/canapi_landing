@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "canapi_landing_backend": {
+      "main": "src/canapi_landing_backend/main.mo",
+      "type": "motoko"
+    },
+    "canapi_landing_frontend": {
+      "dependencies": [
+        "canapi_landing_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/canapi_landing_frontend/src/index.html"
+      },
+      "source": [
+        "src/canapi_landing_frontend/assets",
+        "dist/canapi_landing_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
