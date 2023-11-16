@@ -111,6 +111,7 @@ a:hover {
 .app-image {
   display: block;
   border-radius: 10px;
+  max-width: 100%;
 }
 
 .app-image-mobile {
